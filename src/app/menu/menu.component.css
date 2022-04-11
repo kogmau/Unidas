@@ -1,0 +1,31 @@
+
+
+
+
+.bgcor{
+    background:radial-gradient(rgb(73, 2, 73),rgb(27, 3, 27),rgb(13, 0, 31));
+}
+
+.bgcorBtn{
+    background:white;
+}
+
+
+
+header{
+    background:linear-gradient(rgb(73, 2, 73),rgb(27, 3, 27),rgb(13, 0, 31));
+
+}
+
+nav div ul li a{
+color:white;
+}
+
+
+.head ul li{
+    display: inline;
+}
+
+.head ul li a{
+    margin-right: auto;
+}

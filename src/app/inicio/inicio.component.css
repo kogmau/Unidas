@@ -1,0 +1,80 @@
+
+body{
+    background-color: #c9c3cc;
+}
+
+article,.menuperfil,img{
+    background: rgba(255, 255, 255, 0.281);
+box-shadow: 0 8px 32px 0 rgba(23, 0, 43, 0.37);
+backdrop-filter: blur( 2px );
+-webkit-backdrop-filter: blur( 2px );
+border-radius: 20px;
+border: 1px solid rgba(62, 13, 13, 0.18);
+}
+
+.menuperfil{
+    height: 37em;
+}
+
+.menuperfil2{
+    background: rgba(255, 255, 255, 0.281);
+    box-shadow: 0 8px 32px 0 rgba(23, 0, 43, 0.37);
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 20px;
+    border: 1px solid rgba(62, 13, 13, 0.18);
+}
+
+
+.imgperfil{
+    width: 10em;
+    height: 10em;
+    border-radius: 20em;
+}
+
+
+.imgpublicar{
+    width:3em;
+    height:3em;
+    border-radius: 10em;
+}
+
+
+.imgpost{
+    width: 2em;
+    height: 1.8em;
+    border-radius: 8em;
+}
+
+.textarea{
+    resize: none;
+    width: 100%;
+    border: none;
+
+}
+
+.fs-20{
+    font-size: 20px;
+}
+
+
+.inputPostagem{
+    background: rgba( 255, 255, 255, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 2px );
+-webkit-backdrop-filter: blur( 2px );
+border-radius: 10px;
+height: 3em;
+width: 70%;
+border: 1px solid rgba(62, 13, 13, 0.18);
+}
+
+.pesquisaPostagem{
+    background: rgba( 255, 255, 255, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 2px );
+-webkit-backdrop-filter: blur( 2px );
+border-radius: 10px;
+height: 3em;
+border: 1px solid rgba(62, 13, 13, 0.18);
+}

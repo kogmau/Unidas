@@ -1,0 +1,63 @@
+
+
+article{
+    background:url("../../../assets/imgs/flor.jpg");
+    
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+    
+    
+    
+    .forma{
+    
+        background:white;
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        background-color: rgba(70, 3, 54, 0.589);
+        width: 60%;
+        margin: auto;
+        color: black;
+        }
+    
+    .forma a{
+        color:rgb(43, 8, 77);
+    }
+    
+    input {
+        display: block;
+        height:3em;
+        margin: auto;
+        width: 80%;
+    }
+    
+    label{
+        margin-top: 2%;
+    }
+    
+    
+    textarea{
+        resize: none; 
+        width: 80%;
+        margin: auto;
+    }
+    
+    
+    .btn-cad{
+        background-color: rgb(103, 28, 150);
+        color: white;
+        border: 1px solid darkblue;
+    }
+    
+    
+    .btn-cancel{
+        color: white;
+        background:rgb(216, 62, 62);
+        border: 1px solid black;
+    }
+    
+    .inputDesc{
+        height: 200px;
+    
+    }

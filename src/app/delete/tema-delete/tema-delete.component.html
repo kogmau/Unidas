@@ -1,0 +1,25 @@
+<article class="container-fluid">
+
+   <div class="row">
+      <div class="col-md-6"> <img src="../../../assets/imgs/trashTema.jpg" width="500" alt="">
+      </div>
+      <div class="col-md-6">
+         <div class="card mt-5">
+
+            <div class="card-body">
+               <p class="card-text" aria-describedby="texto">{{tema.nome}} </p>
+               <p class="card-text" aria-describedby="texto">{{tema.descricao}} </p>
+            </div>
+         </div>
+
+         <hr class="mt-4 mb-4">
+
+         <h5 class="text-center">Tem certeza que deseja apagar esse Tema?</h5>
+         <div class="d-flex justify-content-center mt-5">
+            <button class="btn btn-outline-success mr-3" (click)="deletarTema()">Sim</button>
+            <button class="btn btn-outline-danger" routerLink="/tema">Não</button>
+         </div>
+      </div>
+      <br><br><br>
+   </div>
+</article>

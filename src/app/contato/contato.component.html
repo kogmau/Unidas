@@ -1,0 +1,32 @@
+<body>
+
+
+<article class="container-fluid">
+    <div class="row d-flex text-center m-auto justify-content-center">
+        <div class="col-md-6">
+            <form class="form-group mt-5 mb-5">
+                <h2>Seja um Parceiro</h2>
+                <p style="font-size: 15px;">ou envie sugestões</p>
+                <label for="nome">Nome</label>
+                <input [(ngModel)]="nome" class="form-control" type="text" name="nome" id="">
+                <label for="assunto">Assunto</label>
+                <input [(ngModel)]="assunto" class="form-control" type="text" name="assunto" id="">
+                <label for="mensagem">Mensagem</label>
+                <textarea class="form-control" [(ngModel)]="mensagem" name="mensagem" id="" cols="10" rows="5"></textarea>
+
+                <br>
+                <a (click)="enviar()" class="btn btn-primary p-2" href="mailto:geeksforgeeks@gmial.com?
+                    cc=gfg@gmail.com&
+                    bcc=geeks@gmail.com
+                    &subject={{assunto}}
+                    &body={{mensagem}}">
+                    Enviar
+                </a>
+            </form>
+        </div>
+        
+    </div>
+</article>
+
+
+</body>

@@ -1,0 +1,44 @@
+
+
+
+    form{
+        color:rgb(250, 244, 244);
+        text-align: center;
+        background-color: rgba(70, 3, 54, 0.589);
+        font-size: 1.3em;
+        border-radius: 16px;
+        width: 75%;
+        margin: auto;
+        padding:2%;
+
+
+
+    }
+    
+    
+ form a{
+     color:rgb(43, 8, 77);
+     text-decoration: none;
+ }
+ 
+
+label{
+    margin-top: 2%;
+}
+
+
+input{
+    width: 80%;
+    height: 3.5em;
+    margin: auto;
+}
+
+
+    .btn{
+        background-color: darkmagenta;
+        color: white;
+        padding: 2.5% 6%;
+    }
+
+
+  

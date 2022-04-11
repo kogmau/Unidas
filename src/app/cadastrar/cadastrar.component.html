@@ -1,0 +1,52 @@
+<article class="container-fluid">
+
+        <section class="row d-flex justify-content-center">
+
+
+                <section class="col-md-8 text-center mt-4">
+                        <img src="../../assets/imgs/logoUnidas.png" width="250" height="170" alt="">
+
+                        <form class="form-group" action="">
+                                <br>
+                                <h1 class="">Cadastro</h1>
+                                <label for="nome">Nome Completo:</label>
+                                <input class="form-control" type="text" [(ngModel)]="usuario.nome"
+                                        placeholder="Nome Completo" id="nome" name="nome">
+
+                                <label for="email">Email:</label>
+                                <input class="form-control" type="email" [(ngModel)]="usuario.usuario"
+                                        placeholder="Email" id="email" name="email">
+
+                                <label for="foto">Descrição:</label>
+                                <textarea class="form-control" type="text" name="" id="" cols="30" rows="5" size="1" maxlength="255" id="desc"
+                                (keydown)="desc($event)"></textarea>
+                                <p>caracters:{{num}}</p>
+
+                                <label for="foto">Link da Foto:</label>
+                                <input class="form-control" type="email" [(ngModel)]="usuario.foto"
+                                        placeholder="Link da foto" id="foto" name="foto">
+                                        <a href="https://imgur.com/" class="" target="_blank">clique aqui para hospedar a imagem</a>
+                                        <br>
+                                <label for="senha">Senha:</label>
+                                <input class="form-control" type="password" (input)="confirmarSenha($event)"
+                                        placeholder="Senha" id="senha" name="senha">
+
+                                <label for="confirmsenha">Confirmar Senha:</label>
+                                <input class="form-control" type="password" [(ngModel)]="usuario.senha"
+                                        placeholder="Confirmar Senha" id="confirmsenha" name="confirmsenha">
+
+
+                                <button class="btn btn-cad m-4 p-2" type="submit"
+                                        (click)="cadastrarUsuario()">Cadastrar</button>
+                                <a class="btn btn-cancel m-4 p-2" routerLink="/entrar">Cancelar</a>
+
+                        </form>
+                </section>
+
+
+        </section>
+
+
+
+
+</article>

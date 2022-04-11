@@ -1,0 +1,25 @@
+<article class="container-fluid">
+
+    <div class="row">
+        
+        <div class="card mt-5 col-md-3" *ngFor='let usuario of listaUsuarios | orderBy : key: reverse'>
+  
+          <div class="text-center mt-3" >
+            <div>
+              <h5 class="monospace">id: {{usuario.id}}</h5>
+              <img src={{usuario.foto}} width="50" class="rounded-circle" alt="">
+              <h3 class="lead">email: {{usuario.usuario}}</h3>
+              <h3 class="lead">nome: {{usuario.nome}}</h3>
+              <h3 class="lead">tipo: {{usuario.tipo}}</h3>
+              <a class="m-3" [routerLink]="['/perfil-edit',usuario.id]"><i class="fa fa-pencil-square-o fa-xl"
+                  aria-hidden="true"></i></a>
+  
+              <a class="m-3" [routerLink]="['/perfil-delete',usuario.id]"><i class="fa fa-trash  fa-xl" aria-hidden="true"></i></a>
+  
+            </div>
+          </div>
+  
+        </div>
+      
+    </div>
+</article>

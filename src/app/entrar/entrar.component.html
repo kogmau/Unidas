@@ -1,0 +1,32 @@
+
+<article class="container-fluid">
+    <section class="row  d-flex justify-content-center">
+        
+        <section class="col-md-6 mt-5 pt-3">
+        <form class="form-group mt-5" action="">
+
+         
+                <h3 class="">Entrar</h3>
+                <label for="email">Email:</label>
+                <input  class="form-control" type="email" [(ngModel)]="usuarioLogin.usuario" placeholder="Email" id="email" name="email">
+
+                <label for="senha">Senha:</label>
+                <input type="password"  class="form-control" [(ngModel)]="usuarioLogin.senha" placeholder="Senha" id="senha" name="senha">
+
+                <button type="submit" class="btn mt-4" (click)="Entrar()">Entrar</button>
+               
+                <p class="text-center mt-4">
+                    Nao tem uma conta? <a routerLink="/cadastrar">Crie uma Agora</a>
+                </p>
+         
+        </form>
+
+        </section>
+        <section class="col-md-6 borda mt-4"><img src="../../assets/imgs/entrar.gif" width="500" height="530" alt=""></section>
+
+
+    </section>
+
+        
+
+</article>

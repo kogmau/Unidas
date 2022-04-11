@@ -1,0 +1,25 @@
+<article class="container-fluid">
+
+   <div class="row justify-content-center">
+      <div class="col-md-8 mt-5">
+
+         <div class=" text-center">
+            <img src={{usuario.foto}} class="rounded-circle" width="100px" alt="">
+            <p class="card-text" aria-describedby="texto">id: {{usuario.id}} </p>
+            <p class="card-text" aria-describedby="texto">nome: {{usuario.nome}} </p>
+            <p class="card-text" aria-describedby="texto">descrição: {{usuario.descricao}} </p>
+         </div>
+
+         <hr class="mt-4 mb-4">
+
+         <h5 class="text-center">Tem certeza que deseja apagar esse Usuario?</h5>
+         <div class="d-flex justify-content-center mt-5">
+            <button class="btn btn-outline-success mr-3" (click)="deletarUsuario()">Sim</button>
+            <button class="btn btn-outline-danger" routerLink="/usuarios">Não</button>
+         </div>
+      </div>
+      <br><br>
+      <br><br>
+      <br><br>
+   </div>
+</article>

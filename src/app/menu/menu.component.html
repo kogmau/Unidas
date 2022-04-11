@@ -1,0 +1,53 @@
+<header>
+    <nav class="head">
+        <ul class="text-white container-fluid fs-16">
+
+            <section class="row d-flex justify-content-center">
+                <div class="col-md-4 text-center">
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img class="" src="../../assets/imgs/logoUnidas.png" width="100" height="72" alt="">
+                </div>
+
+                <div class="col-md-4 mt-4 text-right">
+                    <li class="nav-item mr-4">
+                        <a *ngIf="auth.adm()" routerLink="/usuarios" class="text-white"><i class="fa fa-users" aria-hidden="true">Gerenciar
+                                Usuarios</i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a (click)="btnSair()" class="text-white" href="">Sair<i class="fa fa-sign-out"
+                                aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </div>
+            </section>
+
+        </ul>
+    </nav>
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light bgcor">
+    <button class="navbar-toggler ml-auto bgcorBtn" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon navbar-light"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav m-auto">
+            <li class="nav-item ">
+                <a class="nav-link active" routerLink="/inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" routerLink="/sobre-nos">Sobre-nos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" routerLink="/contato">Fale-Conosco</a>
+            </li>
+        </ul>
+
+
+    </div>
+</nav>
+</header>

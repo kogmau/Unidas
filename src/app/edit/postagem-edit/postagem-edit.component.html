@@ -1,0 +1,48 @@
+<article class="container-fluid">
+<br>
+<br>
+  <div class="row">
+    <div class="col-md-4">
+      <img src="../../../assets/imgs/Taking notes-amico.png" width="400em" alt="">
+    </div>
+    <div class="col-md-8">
+
+      <div>
+        <div class="form-group">
+          <label for="titulo">Titulo da postagem</label>
+          <input type="text" class="form-control" id="titulo" aria-describedby="emailHelp"
+            placeholder="Digite aqui o seu titulo" [(ngModel)]="postagem.titulo">
+        </div>
+
+        <div class="form-group">
+          <label for="texto">Texto da postagem</label>
+          <textarea class="form-control" id="texto" rows="3" placeholder="Digite aqui o seu texto"
+            [(ngModel)]="postagem.descricao"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="anexo">Anexo</label>
+          <input class="form-control" id="texto" rows="3" placeholder="coloque aqui o link da imagem"
+            [(ngModel)]="postagem.anexo">
+        </div>
+
+        <div class="form-group m-0">
+          <label class="text-monospace" for="tema">Escolha um tema ou <a routerLink="/tema"> Cadastre um
+              novo</a></label>
+          <select name="tema" id='tema' [(ngModel)]="idTema" (change)="findByIdTema()" class="form-control">
+            <option *ngFor="let item of listaTemas" value={{item.id}}>
+              {{item.nome}}
+            </option>
+          </select>
+        </div>
+
+        <div class="d-flex justify-content-end mt-3">
+          <button type="button" class="btn btn-primary m-3 w-25" (click)="atualizarPostagem()">Salvar</button>
+          <button type="button" class="btn btn-outline-danger m-3 w-25" routerLink="/inicio">Cancelar</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</article>
